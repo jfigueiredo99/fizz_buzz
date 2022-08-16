@@ -7,8 +7,4 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
-    <ItemGroup>
-      <Compile Remove="ProceduralImplementation.cs" />
-    </ItemGroup>
-
 </Project>
