@@ -17,33 +17,33 @@ using System;
 
 for (int i = 50; i <= 110; i++)
 {
-    if (i % 3 == 0 && i % 5 == 0 && i % 7 == 0)
+    if (isDivisibleBy3(i) && isDivisibleBy5(i) && isDivisibleBy7(i))
     {
         Console.WriteLine("FizzBuzzWoof");
     }
 
-    else if (i % 5 == 0 && i % 7 == 0)
+    else if (isDivisibleBy5(i) && isDivisibleBy7(i))
     {
         Console.WriteLine("BuzzWoof");
     }
 
-    else if (i % 3 == 0 && i % 7 == 0)
+    else if (isDivisibleBy3(i) && isDivisibleBy7(i))
     {
         Console.WriteLine("FizzWoof");
     }
-    else if (i % 3 == 0 && i % 5 == 0)
+    else if (isDivisibleBy3(i) && isDivisibleBy5(i))
     {
         Console.WriteLine("FizzBuzz");
     }
-    else if (i % 7 == 0)
+    else if (isDivisibleBy7(i))
     {
         Console.WriteLine("Woof");
     }
-    else if (i % 5 == 0)
+    else if (isDivisibleBy5(i))
     {
         Console.WriteLine("Buzz");
     }
-    else if (i % 3 == 0)
+    else if (isDivisibleBy3(i))
     {
         Console.WriteLine("Fizz");
     }
@@ -51,4 +51,19 @@ for (int i = 50; i <= 110; i++)
     {
         Console.WriteLine(i);
     }
+}
+
+bool isDivisibleBy3(int i1)
+{
+    return i1 % 3 == 0;
+}
+
+bool isDivisibleBy5(int i2)
+{
+    return i2 % 5 == 0;
+}
+
+bool isDivisibleBy7(int i3)
+{
+    return i3 % 7 == 0;
 }
