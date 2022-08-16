@@ -15,12 +15,29 @@
 using System;
 
 
-for ( int i = 1; i <= 50; i++)
+for (int i = 50; i <= 110; i++)
 {
-   
-    if (i % 3 == 0 && i % 5 == 0)
+    if (i % 3 == 0 && i % 5 == 0 && i % 7 == 0)
+    {
+        Console.WriteLine("FizzBuzzWoof");
+    }
+
+    else if (i % 5 == 0 && i % 7 == 0)
+    {
+        Console.WriteLine("BuzzWoof");
+    }
+
+    else if (i % 3 == 0 && i % 7 == 0)
+    {
+        Console.WriteLine("FizzWoof");
+    }
+    else if (i % 3 == 0 && i % 5 == 0)
     {
         Console.WriteLine("FizzBuzz");
+    }
+    else if (i % 7 == 0)
+    {
+        Console.WriteLine("Woof");
     }
     else if (i % 5 == 0)
     {
@@ -34,5 +51,4 @@ for ( int i = 1; i <= 50; i++)
     {
         Console.WriteLine(i);
     }
-    
 }
